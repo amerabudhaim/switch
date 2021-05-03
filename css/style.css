@@ -73,6 +73,12 @@ header nav a.active {
   color: yellow;
   font-weight: 500;
 }
+
+header nav a:hover {
+  color: yellow;
+  font-weight: 500;
+}
+
 header nav#menu {
   display: inline-block;
     position: absolute;
