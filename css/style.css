@@ -34,8 +34,49 @@
 * {
   box-sizing: border-box;
 }
+header p {
+    /* background-color: var(--base); */
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Tajawal';
+    font-size: 32px;
+    color: var(--white-2);
+    position: relative;
+    left: 59px;
+    top: 59px;
+
+    animation: typing 2s steps(22) infinite;
+    overflow:hidden;
+    white-space: nowrap;
+    width: 29ch;
+
+}
+ 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 header {
-  background-image: linear-gradient(to bottom right, var(--base), var(--base));
+  background-image: url(../img/bg1-t2.png);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-color: linear-gradient(to bottom right, var(--base), var(--base)) ;
+  height: 100vh;
+
+  background-image: url(../img/bg1-t2.png);
+  background-size: 100% 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #2070fb;
+  background-position: right;
   height: 100vh;
 }
 
@@ -46,6 +87,9 @@ header i {
   font-size: 70px;
   height: 100%;
   padding: 18px 15px 0 0;
+} 
+header > p {
+
 }
 
 h1 {
@@ -93,20 +137,31 @@ h1 span {
 header nav a {
   color: var(--white-1);
   text-transform: uppercase;
-  padding: 0 10px;
+  padding: 5px 10px;
 
   font-family: "Krona One", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Antonio", sans-serif;
   font-family: "Tajawal", sans-serif;
   font-family: "Raleway", sans-serif;
+
+  margin-right: 15px;
+  border-radius: 15px;
+  background-color: var(--gold);
+  background-color: var(--green-1);
+  background-color: var(--turquaz-3);
+  background-color: var(--base);
+  background-color: var(--gray-1);
 }
 
 header nav a.active {
   color: var(--orange);
   color: var(--yellow);
+  
   /* color:var(--green-2); */
-
+  /* color: var(--gold);
+  color: var(--green-1);
+  color: var(--turquaz-3); */
   font-weight: 500;
 }
 
@@ -128,7 +183,8 @@ header nav#menu {
   --section-comment: 18px;
   --card-description: 15px;
 }
-.services ,.testomonials {
+.services,
+.testomonials {
   text-align: center;
   padding: 35px 0 0 0;
 
@@ -160,7 +216,8 @@ a {
   position: relative;
 }
 
-.services .title h2 ,.testomonials .title h2 {
+.services .title h2,
+.testomonials .title h2 {
   text-transform: capitalize;
   font-size: var(--section-title);
   font-weight: 600;
@@ -175,10 +232,12 @@ a {
   color: var(--turquaz-3);
   color: var(--gold);
 }
-.services .title h2 span ,.testomonials .title h2 span {
+.services .title h2 span,
+.testomonials .title h2 span {
   color: var(--comp-1);
 }
-.services .title p ,.testomonials .title p {
+.services .title p,
+.testomonials .title p {
   font-size: var(--section-comment);
   color: var(--shade-3);
   color: var(--shade-2);
@@ -186,7 +245,8 @@ a {
   color: var(--gray-1);
 }
 
-.services .cards ,.testomonials .cards {
+.services .cards,
+.testomonials .cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -256,15 +316,30 @@ a {
   color: white;
   font-size: 15px;
 
-  transition:all .1s linear;
+  transition: all 0.1s linear;
 }
 
 .services .cards .card-wrap > div > a:hover i.second {
-  color:var(--gold);
+  color: var(--gold);
 }
 
 .testomonials img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+#records {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--gold);
+  color: whitesmoke;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  text-transform: capitalize;
+  font-family: "Raleway";
+}
+
+#records > div {
+  min-width: 25%;
 }
