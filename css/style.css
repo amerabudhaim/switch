@@ -184,7 +184,7 @@ header nav#menu {
   --card-description: 15px;
 }
 .services,
-.testomonials {
+.testomonials, #records {
   text-align: center;
   padding: 35px 0 0 0;
 
@@ -194,6 +194,20 @@ header nav#menu {
   font-family: "Raleway", sans-serif;
   font-family: "Tajawal", sans-serif;
 }
+#records p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+#records i {
+  font-size: 50px;
+  
+}
+#records span {
+  font-weight: bold;
+  display: block;
+  margin:15px 0;
+}
+
 .testomonials {
   background-color: var(--tint-3);
   /* background-color: var(--tint-2);
@@ -257,17 +271,19 @@ a {
 }
 .services .cards .card-wrap div {
   padding: 20px 0;
-  min-height: 420px;
+  min-height: 348px;
   box-shadow: 0 0 12px 2px #ccc;
-  border-radius: 25px;
+  box-shadow: 0 0 3px 2px #ddd;
+    border-radius: 25px;
   background: var(--white-3);
 }
 .services .cards p {
   padding: 0 25px;
   font-size: var(--card-description);
-  line-height: 1.75;
+  line-height: 1.3;
   text-align: justify;
   color: var(--gray-1);
+  margin-bottom: 0;
 }
 
 .services .cards .card-wrap > div > a {
@@ -333,12 +349,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--gold);
-  color: whitesmoke;
-  padding-top: 1.5em;
-  padding-left: 1.5em;
+  color: rgb(173, 143, 143);
+  padding: 1.5em 15px;
+  
   text-transform: capitalize;
   font-family: "Raleway";
+
+  font-size: 30px;
+  margin: 1.5em 0;
+  color: var(--white-2);
 }
+
 
 #records > div {
   min-width: 25%;

@@ -1,0 +1,110 @@
+.testomonials {
+  background-color: var(--gray-1);
+  color: var(--white-1);
+  padding-bottom: 35px;
+
+  background-image: linear-gradient(#333, transparent);
+
+  min-height: 253px;
+}
+.testomonials .title h2,
+.testomonials .title h2 span {
+  color: inherit;
+}
+.testomonials .cards-t {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  text-align: justify;
+}
+.testomonials .title p {
+  color: inherit;
+}
+i.fas.fa-comment-dots {
+  font-size: 50px;
+  float: left;
+  margin-right: 15px;
+}
+
+.cards-t p {
+  text-align: justify;
+}
+.cards-t div {
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.testomonials h3 {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.cards-t span {
+  font-style: italic;
+  padding-right: 15px;
+}
+
+.cards-t span.role::after {
+  content: ",";
+  font-size: 30px;
+  position: absolute;
+  line-height: 16px;
+}
+
+#records {
+  margin-bottom: 0;
+}
+
+.cards-t {
+  /* background-color: inherit; */
+  position: absolute;
+  /* animation-name: fadeIn; */
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+  animation-direction: normal;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  /* animation-play-state: paused; */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.cards-t.first {
+  /* animation-delay: -2s; */
+  /* animation-direction: alternate-reverse; */
+}
+
+.cards-t.second,
+.cards-t.third {
+  /* display: none; */
+}
+#slide {
+  margin-top: 145px;
+}
+#slide i {
+  margin-right: 5px;
+  color: #aaa;
+
+   transition: color 1s; 
+  cursor:pointer;
+}
+#slide i.active {
+  color: #111;
+}
+
+/* #slide a.active i {
+    color: #111;
+} */
