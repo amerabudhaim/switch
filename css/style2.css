@@ -59,7 +59,7 @@ i.fas.fa-comment-dots {
   /* background-color: inherit; */
   position: absolute;
   /* animation-name: fadeIn; */
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   /* animation-iteration-count: infinite; */
   animation-direction: normal;
   opacity: 0;
@@ -92,7 +92,7 @@ i.fas.fa-comment-dots {
   /* display: none; */
 }
 #slide {
-  margin-top: 145px;
+  margin-top: 25px;
 }
 #slide i {
   margin-right: 5px;
@@ -108,3 +108,7 @@ i.fas.fa-comment-dots {
 /* #slide a.active i {
     color: #111;
 } */
+
+#wrap-t {
+    min-height: 88px;
+}
