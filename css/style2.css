@@ -112,3 +112,90 @@ i.fas.fa-comment-dots {
 #wrap-t {
     min-height: 88px;
 }
+
+header nav#social {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  padding-top: 15px;
+  /* font-size: 30px; */
+}
+
+header nav#social i::before {
+  font-size: 35px;
+  padding-right: 15px;
+  font-family: 'Font Awesome 5 Free' ,'Font Awesome 5 Brands';
+}
+
+header nav#social i {
+  font-size: 0px;
+  width: 50px;
+  text-align: center;
+  /* line-height: 35px; */
+  /* box-shadow: 1px 3px 5px 3px gray; */
+  transition: color 1s ,font-size 1s ,width 1s,background-color 1s ,background-image 1s; /* the problem is with text-align */
+  padding: 5px 0;
+  /* padding-right:15px; */
+  font-family: 'Montserrat' ,sans-serif;
+  font-weight: 600;
+}
+
+header nav#social i.fas.fa-mobile {
+  width: 35px;
+  /* transition: all 1s; */
+}
+
+header nav#social i:hover {
+  color: var(--yellow);
+  cursor: pointer;
+  width: 22ch;
+  /* background-color: var(--shade-2); */
+  /* text-align: initial; */
+  background-image: linear-gradient(to right, transparent 7%, var(--yellow) 7%);
+  background-image: linear-gradient(to right, transparent, var(--shade-2));
+  background-image: linear-gradient(to right, var(--shade-2) ,transparent);
+  /* box-shadow: 37px 0px 1px 1px; */
+  /* text-align: initial; */
+  font-size:35px;
+}
+
+header nav#social i.fas.fa-mobile:hover {
+  width: 22ch;
+  /* box-shadow: 25px 0px 1px 1px; */
+}
+
+header nav#social i.fab.fa-facebook:hover {
+  width: 22ch;
+  /* text-align: initial; */
+  /* box-shadow: 25px 0px 1px 1px; */
+}
+header nav#social i.fab.fa-facebook.link {
+  transition: none;
+}
+header nav#social i.fab.fa-facebook.link:hover {
+  color:var(--yellow);
+  cursor: pointer;
+  width: initial;
+  background-image: initial;
+}
+
+header nav#social i > a {
+  color:inherit;
+  background-color: initial;
+  padding: 0;
+  font-family: inherit;
+}
+
+
+header nav#social a {
+  color:inherit;
+  background-color: initial;
+  padding: 0;
+  font-family: inherit;
+}
+
+header nav#social i > a:hover {
+  font-weight: 700;
+  font-family: inherit;
+}

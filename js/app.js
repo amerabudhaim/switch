@@ -16,8 +16,6 @@ function init() {
   someSlide();
 
   //slideWrap.addEventListener("mouseenter", handleMouseEnter);
-  
- 
 }
 // let toggle = false;
 // function handleMouseEnter2(obj) {
@@ -106,12 +104,84 @@ function slideOnClick(index) {
   }
 
   slideNumber++;
-  
+
   if (slideNumber == 3) {
-   slideNumber = 0;
+    slideNumber = 0;
   }
-  
+
   timer = window.setInterval(someSlide, interval);
 }
 
 init();
+
+// function test() {
+//   let p = document.querySelector("p[data-p-id]");
+//   p.style.overflow = "hidden";
+
+//   var myHeaders = new Headers();
+
+//   myHeaders.append("accept", "text/plain");
+//   myHeaders.append("method", "get");
+
+//   var myRequest2 = new Request(
+//     "https://filesamples.com/samples/document/txt/sample3.txt"
+//   );
+
+//   var myRequest = new Request("https://fiddle.jshell.net/robots.txt");
+//   fetch(myRequest, { mode: "no-cors" }).then(function (response) {
+//     console.log(response);
+//     return response.text().then(function (text) {
+//       console.log(text);
+//       p.style.overflow = "hidden";
+//       p.style.height = "300px";
+//       p.textContent = text;
+//     });
+//   });
+
+//   fetch("https://api.github.com/users/manishmshiva", {
+//     method: "GET",
+//   })
+//     .then((response) => {
+//       console.log(
+//         response.text().then(function (text) {
+//           console.log(text);
+//         })
+//       );
+//     })
+//     .catch((err) => {
+//       console.error(err);
+//     });
+
+//   Promise.all([
+//     fetch("https://fiddle.jshell.net/robots.txt", {
+//       mode: "no-cors",
+//     }).then((x) => x.text()),
+//     fetch("js/test.txt").then((x) => x.text()),
+//   ]).then(([sampleResp, sample2Resp]) => {
+//     console.log(sampleResp);
+//     console.log(sample2Resp);
+//   });
+
+//   var url = "https://fiddle.jshell.net/robots.txt";
+//   var storedText;
+
+//   fetch(url, {
+//     headers: {
+//       method: "POST",
+//       contentType: "text/plain",
+//       accept: "text/plain",
+//     },
+//   }).then(function (response) {
+//     response.text().then(function (text) {
+//       storedText = text;
+//       done();
+//     });
+//   });
+
+//   function done() {
+//     document.querySelector("p[data-p-id]").textContent =
+//       "Here's what I got! \n" + storedText;
+//   }
+// }
+
+// test();
