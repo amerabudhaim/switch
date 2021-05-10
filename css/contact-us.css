@@ -4,11 +4,12 @@
 
 #cards-cu {
     display: flex;
-    width: 50vw;
+    width: 40vw;
     flex-wrap: wrap;
-    margin-left:50px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 45px;
 }
+
 #cards-cu i {
     font-size: 35px;
     color:var(--brown);
@@ -48,32 +49,36 @@ textarea {
 }
 input[type=submit] {
     width: auto;
-    border: 2px solid #096777;
+    border: 2px solid var(--comp-1);
     padding: 10px 25px;
     letter-spacing: 1.5px;
     font-weight: 600;
-    color:var(--turquaz-3);
-}
-input[type=submit]:hover {
     background-color: var(--comp-1);
     color:var(--white-2);
+
+}
+input[type=submit]:hover {
+    /* background-color: initial;
+    color:var(--comp-1); */
     cursor:pointer;
-    border: 2px solid var(--comp-1);
+    /* border: 2px solid #096777; */
+    box-shadow: 0 0 5px 3px lightgrey;
 }
 #cards-cu-wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 35px;
 }
 form {
-    width:50vw;
+    width: 45vw;
     padding: 35px;
     background-color: var(--brown);
     background-color: var(--turquaz-3);
-    margin-right: 100px;
+    /* margin-right: 100px; */
     margin-top: 15px;
     padding-bottom: 45px;
-    
 }
+
 legend {
     text-align: initial;
     padding: 0 0 30px 0;
@@ -83,5 +88,60 @@ legend {
 }
 
 #map {
-    margin: 0 50px 0 60px;
+    /* margin: 0 50px 0 60px; */
+    display: block;
+    width: 100%;
+    margin: 35px 75px 0 75px;
+}
+
+#contactUs .title h2 {
+    padding: 0 25px;
+    display: inline-block;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: -32px;
+    transition: background-color 1s;
+}
+#contactUs .title h2.inactive {
+    font-size: 1em;
+    line-height: 29px;
+    border-top: 2px solid transparent;
+    padding-top: 33px;
+    /* height: 57px; */
+}
+#contactUs .title h2.inactive:hover {
+    font-size: 1em;
+    background-color: var(--tone-1);
+    border-top: 5px solid var(--comp-1);
+    cursor: pointer;
+}
+
+#contactUs .title h2.active {
+    border-top: 2px solid var(--turquaz-3);
+    border-left: 2px solid var(--turquaz-3);
+    border-right: 5px solid var(--turquaz-3);
+    padding-top: 25px;
+    background-color: var(--white-2);
+}
+
+#contactUs .title {
+    /* background-color: var(--gray-1); */
+    /* position: relative; */
+    height: 37px;
+    border-bottom: 5px solid var(--gray-1);
+    border-bottom: 2px solid var(--turquaz-3);
+    /* top: 25px; */
+    margin-top: 35px;
+}
+
+#contactUs > p {
+    margin-top: 25px;
+}
+
+#contactUs .tab-c {
+    display: none;
+}
+#contactUs .tab-c .test {
+    width: 100%;
 }

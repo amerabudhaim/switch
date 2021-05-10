@@ -1,4 +1,8 @@
 footer {
     height: 500px;
     background-color: var(--shade-3);
+    text-align: center;
+    color: var(--white-2);
+    font-family: cursive ,sans-serif;
+    padding-top: 25px;
 }
