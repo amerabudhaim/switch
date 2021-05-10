@@ -66,16 +66,30 @@ header p {
 
 header {
   background-image: url(../img/bg1-t2.png);
+  background-color: #2070fb;
   background-size:100% 100%;
   background-repeat: no-repeat;
-  background-color: linear-gradient(to bottom right, var(--base), var(--base)) ;
+  background-image: linear-gradient(to bottom right, var(--base), var(--base)) ;
   height: 100vh;
-
-  background-image: url(../img/bg1-t2.png);
+  background-image: radial-gradient(circle at -3% 7%
+  ,#4b79b0 1% ,transparent 1%
+   
+  ,transparent 5% ,#4b79b0 5%
+    ,#4b79b0 7% ,transparent 7%
+  ,transparent 25% ,#4b79b0 25%
+    ,#4b79b0 30% ,transparent 30%
+  ,transparent 33% ,#4b79b0 33%
+    ,#4b79b0 35% ,transparent 35%
+  ,transparent 50% ,#4b79b0 50%
+    ,#4b79b0 53% ,transparent 53%
+  ,transparent 70% ,#4b79b0 70%
+    ,#4b79b0 71% ,transparent 71%
+  );
+  background-color:var(--base);
   background-size: 100% 100%;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-color: #2070fb;
+  
   background-position: right;
   height: 100vh;
 }
@@ -176,7 +190,7 @@ header nav#menu {
   display: inline-block;
   position: absolute;
   right: 25px;
-  top: 80px;
+  top: 97px;
 }
 :root {
   --section-title: 42px;
