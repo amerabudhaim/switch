@@ -153,16 +153,17 @@ footer section:first-child > div:nth-child(2) {
     /* font-family: 'Handlee', cursive; */
     font-size: 18px;
     position: absolute;
-    right: 0;
-    top: 55%;
+    right: 46px;
+    top: 50%;
     width: 152px;
-    transform: rotate(-25deg);
+    transform: rotate(-29deg);
     color: #ffff5b;
 }
 #note img {
-    width: 90px;
-    right: 50%;
+    width: 66px;
+    right: 59%;
     position: absolute;
-    top: 100%;
+    top: 156%;
     opacity: 0.8;
+    transform: inherit;
 }
