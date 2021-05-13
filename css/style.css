@@ -198,7 +198,7 @@ header nav#menu {
   --card-description: 15px;
 }
 .services,
-.testomonials, #records ,#contactUs {
+.testomonials, #records ,#contactUs ,#easySteps {
   text-align: center;
   padding: 35px 0 0 0;
 
@@ -248,7 +248,7 @@ a {
 }
 
 .services .title h2,
-.testomonials .title h2 ,#contactUs .title h2 {
+.testomonials .title h2 ,#contactUs .title h2 ,#easySteps .title h2 {
   text-transform: capitalize;
   font-size: var(--section-title);
   font-weight: 600;
@@ -264,7 +264,7 @@ a {
   color: var(--gold);
 }
 .services .title h2 span,
-.testomonials .title h2 span ,#contactUs .title h2 span {
+.testomonials .title h2 span ,#contactUs .title h2 span ,#easySteps .title h2 span{
   color: var(--comp-1);
 }
 .services .title p,
