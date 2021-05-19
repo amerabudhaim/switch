@@ -39,7 +39,7 @@ header p {
     display: inline-block;
     padding: 20px;
     font-family: 'Tajawal';
-    font-size: 32px;
+    font-size: 4vw;
     color: var(--white-2);
     position: relative;
     left: 59px;
@@ -200,7 +200,7 @@ header nav#menu {
 .services,
 .testomonials, #records ,#contactUs ,#easySteps {
   text-align: center;
-  padding: 35px 0 0 0;
+  padding: 35px 0;
 
   font-family: "Krona One", sans-serif;
   font-family: "Montserrat", sans-serif;
@@ -229,6 +229,7 @@ header nav#menu {
   background-color: var(--tint-3);
   /* background-color: var(--tint-2);
   background-color: var(--turquaz-3); */
+  border-bottom: 3px solid #333;
 }
 h2,
 h3 {
@@ -367,13 +368,13 @@ a {
   flex-wrap: wrap;
   background-color: var(--gold);
   color: rgb(173, 143, 143);
-  padding: 1.5em 15px;
+  padding: 1.5em 0;
   
   text-transform: capitalize;
   font-family: "Raleway";
 
   font-size: 30px;
-  margin: 1.5em 0;
+  margin: 0;
   color: var(--white-2);
 }
 

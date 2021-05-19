@@ -1,0 +1,95 @@
+@media (max-width: 600px) {
+    #logo {
+        justify-content: center;
+    }
+    .cards ,#records{
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .services .cards .card-wrap {
+        max-width: 100%;
+    }
+    .services .cards .card-wrap div {
+        min-height: initial;
+
+    }
+    #records > div:nth-child(odd) {
+        background-color: #b7792e;
+    }
+    #records > div:nth-child(even) {
+        background-color: var(--gold);
+    }
+    #records > div {
+       padding:15px 0;
+    }
+    #records {
+        margin: 0;
+        padding: 0;
+        background-color: initial;
+    }
+
+    .testomonials .cards-t {
+        flex-direction: column;
+    }
+
+    .cards-t div {
+        max-width: 100%;
+        padding-bottom: 30px;
+        background-image: linear-gradient( var(--gray-1) ,transparent);
+    }
+
+    #slide {
+        margin-top: 237px;
+    }
+
+    header nav#social {
+        display:none;
+    }
+
+
+    header nav#menu {
+        font-size: 1.3vw;
+        top:150px;
+    }
+
+    footer section:first-child {
+        background-size: 100% auto;
+        background-position: bottom;
+        background-image: url(../img/fbg-3.png);
+    }
+
+    #note {
+        display: none;
+    }
+
+    footer section:nth-child(2) ul {
+        display: none;
+    }
+
+    footer section:nth-child(2) p {
+        line-height: 20px;
+        margin-top: 10%;
+    }
+
+    #f-top {
+        flex-direction: column;
+    }
+
+    footer section:first-child > div {
+       max-width: initial;
+       margin: 0;    
+    }
+    footer section:first-child > div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    footer section:first-child li {
+        padding-right: 0;
+        width: 152px;
+    }
+
+    .footer-center {
+        color: whitesmoke;
+    }
+
+  }

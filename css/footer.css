@@ -167,3 +167,7 @@ footer section:first-child > div:nth-child(2) {
     opacity: 0.8;
     transform: inherit;
 }
+
+footer section:first-child p:hover {
+  color: whitesmoke;
+}
