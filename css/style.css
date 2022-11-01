@@ -51,7 +51,20 @@ header p {
     width: 29ch;
 
 }
- 
+
+#slogan h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    position: relative;
+    left: 79px;
+    top: -39px;
+    font-family: 'Tajawal';
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 @keyframes typing {
   from {
     width: 0
