@@ -45,7 +45,7 @@ header p {
     left: 59px;
     top: 59px;
 
-    animation: typing 2s steps(22) infinite;
+    /* animation: typing 2s steps(22) infinite; */
     overflow:hidden;
     white-space: nowrap;
     width: 29ch;
